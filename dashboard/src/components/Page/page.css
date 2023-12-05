@@ -1,0 +1,55 @@
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: rgba(100, 148, 237, 0.436);
+}
+
+  #activeblue{
+    background-color: #c5d9f8;
+  }
+  #activesidebar{
+    background-color:rgb(255, 255, 255) ;
+    color:  rgb(0, 0, 0);
+  }
+  #modal{
+    display: block;
+        /* right:%; */
+        animation: move_left 1s;
+  }
+
+  @keyframes move_left{
+    0%{
+        position: absolute;
+        right:100%;
+        top: 0%;
+    }
+    100%{
+        position: absolute;
+        right:0%;
+        top: 0%;
+    }
+  }
+
+
+
+hr{
+    border: .1px solid black;
+}
+@media (max-width:550px) {
+    #parallelogram {
+        width: 35%;
+        height: 8.5rem;
+        transform: skew(0deg);
+        background-color: white;
+      }
+      #parallelogram::after{
+        content: '';
+        background-color: white;
+        top: 0px;
+        transform: skewX(50deg);
+        height: 8.5rem;
+        display: none;
+        width: 50%;
+      }
+}
+
